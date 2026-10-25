@@ -1,0 +1,9 @@
+# Documentation-only repository: everything is excluded unless explicitly allowed.
+*
+!*/
+!*.md
+!.gitignore
+.env*
+*token*
+*secret*
+*private*
