@@ -30,6 +30,7 @@ The [October Xbox authentication and achievement case studies](docs/october-auth
 7. [Evidence scope and publication rules](docs/evidence-and-scope.md)
 8. [Windows 8/8.1 follow-up: receipts, CLIP accounts, and tracing](docs/windows-8-follow-up.md)
 9. [October Xbox authentication and achievement case studies](docs/october-auth-and-achievements.md)
+10. [November 4 case studies: authentication, receipts, and gameplay validation](docs/november-4-auth-and-receipts.md)
 
 ## What is included
 
