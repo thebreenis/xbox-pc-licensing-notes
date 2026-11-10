@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-10",
+  "receiptBrokerAccountContextMatchesAcrossGames": true,
+  "receiptBrokerCredentialMatchesAcrossGames": true,
+  "clipCredentialMatchesAcrossGames": true,
+  "clipVersusReceiptAccountEquality": "inconclusive: no CLIP account ID captured; differing ticket hashes do not prove different accounts",
+  "toshiba": {
+    "clipKeys": 0,
+    "clipLeases": 0,
+    "clipHresult": "0x803f8001",
+    "receiptCharacters": 1546,
+    "xboxError": "0x8015DA87",
+    "soapReason": "The creator of this fault did not specify a Reason.",
+    "tokenObtained": false
+  },
+  "crashCourse": {
+    "clipKeys": 0,
+    "clipLeases": 0,
+    "clipHresult": "0x803f8001",
+    "receiptOperationError": "0x80073DF6",
+    "receiptCaptures": 0,
+    "tokenExchangeObserved": false,
+    "helperStopped": true
+  },
+  "loggerCorrection": {
+    "superseded": true,
+    "reason": "Prior analysis incorrectly converted decimal error constants to hexadecimal. Original logger symbol was correct.",
+    "0x80073DF6": "HRESULT_FROM_WIN32(STORE_ERROR_UNLICENSED_USER), decimal 15862 = 0x3DF6",
+    "0x80073CF6": "HRESULT_FROM_WIN32(ERROR_INSTALL_REGISTRATION_FAILURE), decimal 15606 = 0x3CF6",
+    "staticConfirmation": "Supported x86 and x64 Store DLLs map receipt service 0xC03F300C to 0x80073DF6; x86 includes ChkHr(HRESULT_FROM_WIN32(15862L))."
+  }
+}

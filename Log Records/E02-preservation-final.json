@@ -1,0 +1,17 @@
+{
+  "toshiba": {
+    "trackedFiles": 6,
+    "differences": [],
+    "popPresent": false
+  },
+  "standard": {
+    "trackedFiles": 35,
+    "differences": [],
+    "popPresent": true
+  },
+  "adera": {
+    "trackedFiles": 249,
+    "differences": [],
+    "popPresent": true
+  }
+}

@@ -49,3 +49,7 @@ For any new test, record the hypothesis, title/build, effective SDK settings, na
 The README's 24-hour receipt / four-hour token timing and stale-receipt refresh behavior were explicitly reported by the maintainer from their testing. The published summaries do not include a controlled timing trace proving universal behavior; retain that provenance rather than converting it to a documented Microsoft guarantee.
 
 A useful answer is: "This was tested in this configuration and failed at this boundary; repeating it unchanged is unlikely to add information." Avoid "this can never work" unless the evidence actually establishes that stronger claim.
+
+## Detailed evidence archive
+
+The [local-reference audit](reference-audit-2026-11-10.md) maps all 39 retained reference sections and E01-E29 into the public repository. The [Log Records folder](../Log%20Records/README.md) includes sanitized captured formats; consult its provenance notes before treating summaries as wire captures. The [reference snapshot](local-reference-snapshot.md) preserves historical tests and their later corrections.

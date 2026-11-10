@@ -1,0 +1,207 @@
+{
+  "date": "2026-11-09",
+  "storage": {
+    "file": "C:/ProgramData/Microsoft/Windows/ClipSVC/tokens.dat",
+    "bytes": 1907122,
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "exactDocumentSearches": [
+      {
+        "json-utf8": null,
+        "json-utf16": null,
+        "base64-utf8": "0x1a06b8",
+        "base64-utf16": "0x1a0ffe"
+      },
+      {
+        "json-utf8": null,
+        "json-utf16": null,
+        "base64-utf8": "0x17a78b",
+        "base64-utf16": "0x1a493e"
+      }
+    ]
+  },
+  "decodedShapes": [
+    {
+      "test": "adera",
+      "kind": "service-debug-template",
+      "thread": 2896,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipdocument.cpp",
+      "line": 50,
+      "format": "Decoding: %s",
+      "detail": {
+        "length": 58,
+        "structure": {
+          "legacyProductId": {
+            "type": "string",
+            "length": 36
+          }
+        }
+      },
+      "caller": "LicenseManager.dll+0x88c5"
+    },
+    {
+      "test": "adera",
+      "kind": "service-debug-template",
+      "thread": 2896,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipdocument.cpp",
+      "line": 50,
+      "format": "Decoding: %s",
+      "detail": {
+        "length": 670,
+        "structure": {
+          "entitlementId": {
+            "type": "string",
+            "length": 32
+          },
+          "entitlementSatisfaction": {
+            "type": "string",
+            "length": 6
+          },
+          "isOffline": {
+            "type": "boolean"
+          },
+          "leaseEnforcement": {
+            "type": "string",
+            "length": 16
+          },
+          "leaseUri": {
+            "type": "string",
+            "length": 210
+          },
+          "keyIds": [
+            {
+              "type": "string",
+              "length": 36
+            }
+          ],
+          "kind": {
+            "type": "string",
+            "length": 7
+          },
+          "packages": [
+            {
+              "packageIdentifier": {
+                "type": "string",
+                "length": 36
+              },
+              "packageType": {
+                "type": "string",
+                "length": 4
+              },
+              "productAddOns": [],
+              "productId": {
+                "type": "string",
+                "length": 12
+              },
+              "skuId": {
+                "type": "string",
+                "length": 4
+              }
+            }
+          ],
+          "pollAt": {
+            "type": "string",
+            "length": 33
+          },
+          "refreshOnStartup": {
+            "type": "boolean"
+          },
+          "version": {
+            "type": "number",
+            "value": 7
+          }
+        }
+      },
+      "caller": "LicenseManager.dll+0x88c5"
+    },
+    {
+      "test": "adera",
+      "kind": "service-debug-template",
+      "thread": 2896,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipdocument.cpp",
+      "line": 50,
+      "format": "Decoding: %s",
+      "detail": {
+        "length": 670,
+        "structure": {
+          "entitlementId": {
+            "type": "string",
+            "length": 32
+          },
+          "entitlementSatisfaction": {
+            "type": "string",
+            "length": 6
+          },
+          "isOffline": {
+            "type": "boolean"
+          },
+          "leaseEnforcement": {
+            "type": "string",
+            "length": 16
+          },
+          "leaseUri": {
+            "type": "string",
+            "length": 210
+          },
+          "keyIds": [
+            {
+              "type": "string",
+              "length": 36
+            }
+          ],
+          "kind": {
+            "type": "string",
+            "length": 7
+          },
+          "packages": [
+            {
+              "packageIdentifier": {
+                "type": "string",
+                "length": 36
+              },
+              "packageType": {
+                "type": "string",
+                "length": 4
+              },
+              "productAddOns": [],
+              "productId": {
+                "type": "string",
+                "length": 12
+              },
+              "skuId": {
+                "type": "string",
+                "length": 4
+              }
+            }
+          ],
+          "pollAt": {
+            "type": "string",
+            "length": 33
+          },
+          "refreshOnStartup": {
+            "type": "boolean"
+          },
+          "version": {
+            "type": "number",
+            "value": 7
+          }
+        }
+      },
+      "caller": "LicenseManager.dll+0x88c5"
+    }
+  ],
+  "preservation": {
+    "toshiba": {
+      "files": 6,
+      "allMatch": true
+    },
+    "adera": {
+      "files": 383,
+      "allMatch": true
+    }
+  },
+  "limits": [
+    "Offsets describe this snapshot only, not stable addresses or complete record boundaries",
+    "No claim entire file is plaintext or no other fields are encrypted",
+    "Base64 matches are exact reconstructions of JSON with compact separators"
+  ]
+}

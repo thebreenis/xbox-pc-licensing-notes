@@ -1,0 +1,60 @@
+{
+  "comparison": "Standard successful native authentication versus Toshiba helper-build-2 recipient trace",
+  "standard": {
+    "trace": "outputs/pacman-standard-native-auth-20261108-211047.jsonl",
+    "titleId": 1313676122,
+    "receiptCharacters": 1321,
+    "receiptAppId": "NAMCOBANDAIGamesInc.PAC-MANChampionshipEditionDX_gdy2aq6ez762w",
+    "appIdMatchesInstalledPackageFamily": true,
+    "licenseType": "Full",
+    "productReceiptCount": 0,
+    "requestBytes": 6633,
+    "responseBytes": 9807,
+    "requestedSecurityTokenPresent": true,
+    "issuedTokenScheme": "XBL2.0",
+    "issuedTokenCharacters": 7291,
+    "cachedReceiptUsed": true
+  },
+  "toshiba": {
+    "traceAttachment": "000000000000000000000000000000000000/Pasted text.txt",
+    "titleId": 1313676124,
+    "receiptCharacters": 1546,
+    "receiptAppId": "2d4168ad-4092-4ea7-92fd-1c81e8191304",
+    "expectedPackageFamily": "NAMCOBANDAIGamesInc.2685271D3260E_gdy2aq6ez762w",
+    "appIdMatchesInstalledPackageFamily": false,
+    "licenseType": "Full",
+    "productReceiptCount": 1,
+    "productId": "PAC-MAN CEDX for TOSHIBA full version",
+    "requestBytes": 7249,
+    "responseBytes": 459,
+    "xErr": "0x8015DA87",
+    "soapFault": "s:Sender; no explanatory Reason",
+    "requestedSecurityTokenPresent": false,
+    "issuedTokenCharacters": 0,
+    "freshReceiptUsed": true
+  },
+  "common": {
+    "sdkSha256": "c60cfb494d795d31aa1cb18d963bc7a302091ff63b9ee3ee664667ea4d62973e",
+    "endpoint": "https://auth.xboxlive.com/XSts/xsts.svc/IWSTrust13",
+    "sdkPassesReceiptAndTitleIntoProtectedPayload": true
+  },
+  "assessment": {
+    "identityMismatchConfirmed": true,
+    "mismatchCausedXboxRejection": "Plausible, not proven by available traces",
+    "officialReceiptAppIdDefinition": "Package Family Name",
+    "documentation": "https://learn.microsoft.com/en-us/windows/uwp/monetize/use-receipts-to-verify-product-purchases#appreceipt-element",
+    "limits": [
+      "Toshiba outer SOAP fields were not captured by the helper; cannot prove all fields match Standard",
+      "Protected authentication payload is opaque in wire summaries",
+      "Recipient receipt signature presence is logged but cryptographic validity is not verified",
+      "Different account/title and receipt source prevent a one-variable causal comparison"
+    ],
+    "nextDiscriminatingTest": "A correctly signed Toshiba receipt whose AppId is its package family, submitted through unchanged native Toshiba auth; do not edit signed XML"
+  },
+  "preservation": {
+    "gameLaunched": false,
+    "receiptOrSaveWritten": false,
+    "standardReceiptReadOnlyHashCheck": "passed",
+    "tokensIncluded": false
+  }
+}

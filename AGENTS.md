@@ -14,3 +14,5 @@ Before answering or proposing experiments:
 For continued investigation, preserve saves and receipts; do not clear caches or alter account/licensing state merely to obtain a cleaner trace without specific authorization. Internal Windows hooks need exact binary guards and stability controls. Never treat instrumentation-induced failures as clean service evidence.
 
 Publish only sanitized documentation and public identifiers. Do not commit raw receipts, account/device identifiers or fingerprints, tokens, keys, dumps, saves, profile data, private paths, or game binaries. No permission to run a live experiment, submit achievements, or publish changes is implied merely by reading this repository; follow the user's actual request.
+
+For protocol questions, also read Log Records/README.md and its manifest. Zero-filled fields are redactions, not actual observed zero values; use explicit recorded equality results. Sanitized XML is not signature-verifiable. New exports must preserve replaced string character lengths, omit private values and raw binaries, and distinguish captured records from summaries or synthetic examples.

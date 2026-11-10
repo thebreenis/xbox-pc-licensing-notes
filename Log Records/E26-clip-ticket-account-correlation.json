@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-10",
+  "scope": "local Crash Course account investigation; not friend account",
+  "ticketRecords": {
+    "count": 2,
+    "recordType": [
+      1,
+      1
+    ],
+    "field8Characters": [
+      1445,
+      1405
+    ],
+    "field16Characters": [
+      16,
+      16
+    ],
+    "field16AllHex16": true,
+    "record0IdentifierMatchesEarlierReceiptBrokerPrimaryWebAccountId": true,
+    "sameRunReceiptAccountCaptured": false,
+    "wireAuthorizationMatchesReturnedTicketFields": false,
+    "accountEqualityConclusion": "The receipt broker account identifier is included in the CLIP ticket collection; final server account attribution not established."
+  },
+  "serviceCrash": {
+    "utc": "2026-11-10T07:44:49Z",
+    "process": "svchost.exe_LicenseManager",
+    "exception": "0xc00000ff",
+    "symbolFromLocalSdk": "STATUS_BAD_FUNCTION_TABLE",
+    "faultModule": "ntdll.dll",
+    "faultOffset": "0x1d3df",
+    "cause": "not isolated; instrumentation suspected; this run is not valid licensing-failure evidence"
+  },
+  "helperStopped": true,
+  "markersRemaining": [
+    false,
+    false
+  ],
+  "preservation": [
+    {
+      "file": "LocalState\\Microsoft.Xbox\\000000000000000000000000000000000000.txt",
+      "state": "matched"
+    },
+    {
+      "file": "LocalState\\Microsoft.Xbox\\ED2EAF28-7260-4872-A8BB-F9EA9189FD79.dat",
+      "state": "matched"
+    },
+    {
+      "file": "Settings\\roaming.lock",
+      "state": "matched"
+    },
+    {
+      "file": "Settings\\settings.dat",
+      "state": "matched"
+    }
+  ],
+  "popPresent": false,
+  "dataRemovedOrRestoredByInvestigator": false,
+  "packageModified": false,
+  "distributionUpdated": false,
+  "nextStep": "Isolate service instrumentation failure before another service trace; then correlate ticket-record account field with serialized request credentials."
+}

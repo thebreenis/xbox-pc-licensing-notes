@@ -1,0 +1,157 @@
+{
+  "toshiba": {
+    "licenseLookup": {
+      "kind": "license-package-lookup",
+      "pid": 36536,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "method": "IApplicationLicenseManager.GetLicenseForInstalledPackage",
+      "packageFullName": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "contentType": 1,
+      "flags": "0x20000000"
+    },
+    "licenseResult": {
+      "kind": "license-package-lookup-result",
+      "pid": 36536,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "packageFullName": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "hresult": "0x803f8001",
+      "objectReturned": false
+    },
+    "request": {
+      "kind": "wire-open",
+      "connection": null,
+      "method": "POST",
+      "path": "/Licensing/License/AcquireReceipt/6.2/0?productId=000000000000000000000000000000000000&receiptType=Full",
+      "flags": 8388608
+    },
+    "bodyBytes": 0,
+    "totalBytes": 0,
+    "serverResponseAttributes": {
+      "Version": "1.0",
+      "ErrorCode": "0xc03f300c"
+    },
+    "headers": {
+      "MS-CorrelationId": "000000000000000000000000000000000000",
+      "MS-RequestId": "000000000000000000000000000000000000",
+      "MS-SiteName": "www.microsoft.com",
+      "MS-CV": "000000000000000000000",
+      "Authorization": {
+        "length": 1453,
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "changedFiles": [],
+    "lockedFiles": [],
+    "popPresent": false
+  },
+  "standard": {
+    "licenseLookup": {
+      "kind": "license-package-lookup",
+      "pid": 4532,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "method": "IApplicationLicenseManager.GetLicenseForInstalledPackage",
+      "packageFullName": "NAMCOBANDAIGamesInc.PAC-MANChampionshipEditionDX_1.0.1.2_x86__gdy2aq6ez762w",
+      "contentType": 1,
+      "flags": "0x20000000"
+    },
+    "licenseResult": {
+      "kind": "license-package-lookup-result",
+      "pid": 4532,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "packageFullName": "NAMCOBANDAIGamesInc.PAC-MANChampionshipEditionDX_1.0.1.2_x86__gdy2aq6ez762w",
+      "hresult": "0x803f8001",
+      "objectReturned": false
+    },
+    "request": {
+      "kind": "wire-open",
+      "connection": null,
+      "method": "POST",
+      "path": "/Licensing/License/AcquireReceipt/6.2/0?productId=000000000000000000000000000000000000&receiptType=Full",
+      "flags": 8388608
+    },
+    "bodyBytes": 0,
+    "totalBytes": 0,
+    "serverResponseAttributes": {
+      "Version": "1.0",
+      "ErrorCode": "0xc03f300c"
+    },
+    "headers": {
+      "MS-CorrelationId": "000000000000000000000000000000000000",
+      "MS-RequestId": "000000000000000000000000000000000000",
+      "MS-SiteName": "www.microsoft.com",
+      "MS-CV": "00000000000000000000",
+      "Authorization": {
+        "length": 1453,
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "changedFiles": [],
+    "lockedFiles": [],
+    "popPresent": true
+  },
+  "adera": {
+    "licenseLookup": {
+      "kind": "license-package-lookup",
+      "pid": 12900,
+      "callId": 3,
+      "origin": "explicit-read-only-probe",
+      "method": "IApplicationLicenseManager.GetLicenseForInstalledPackage",
+      "packageFullName": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "contentType": 1,
+      "flags": "0x20000000"
+    },
+    "licenseResult": {
+      "kind": "license-package-lookup-result",
+      "pid": 12900,
+      "callId": 3,
+      "origin": "explicit-read-only-probe",
+      "packageFullName": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "hresult": "0x00000000",
+      "objectReturned": true
+    },
+    "request": {
+      "kind": "wire-open",
+      "connection": {
+        "host": "licensingwindows.mp.microsoft.com",
+        "port": 443
+      },
+      "method": "POST",
+      "path": "/Licensing/License/AcquireReceipt/6.2/0?productId=77F0D9B5-87AC-4816-87D5-76B75AFCB6DB&receiptType=Full",
+      "flags": 8388608
+    },
+    "bodyBytes": 0,
+    "totalBytes": 0,
+    "serverResponseAttributes": {
+      "Version": "1.0",
+      "ErrorCode": "0x0"
+    },
+    "headers": {
+      "MS-CorrelationId": "000000000000000000000000000000000000",
+      "MS-RequestId": "000000000000000000000000000000000000",
+      "MS-SiteName": "www.microsoft.com",
+      "MS-CV": "00000000000000000000",
+      "Authorization": {
+        "length": 1453,
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "changedFiles": [
+      "LocalState\\sentient.dat",
+      "LocalState\\Microsoft.Xbox\\ED2EAF28-7260-4872-A8BB-F9EA9189FD79.dat",
+      "LocalState\\Microsoft.Xbox\\ReceiptKey\\0000000000000000000000000000000000000000000000000000000000000000",
+      "LocalState\\Microsoft.Xbox\\0000000000000000\\1\\0000000000000000000000000000000000000000000000000000000000000000",
+      "LocalState\\Microsoft.Xbox\\0000000000000000\\3\\0000000000000000000000000000000000000000000000000000000000000000",
+      "LocalState\\Microsoft.Xbox\\0000000000000000\\3\\0000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "lockedFiles": [
+      "Settings\\settings.dat",
+      "Settings\\settings.dat.LOG1",
+      "Settings\\settings.dat.LOG2"
+    ],
+    "popPresent": true
+  }
+}

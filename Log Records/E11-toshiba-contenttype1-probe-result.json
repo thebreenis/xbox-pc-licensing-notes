@@ -1,0 +1,54 @@
+{
+  "result": {
+    "hresult": "0x803f8001",
+    "objectReturned": false,
+    "appId": null,
+    "origin": "explicit-read-only-probe"
+  },
+  "events": [
+    {
+      "kind": "license-manager-trace-ready",
+      "pid": 36536,
+      "packageFamily": "NAMCOBANDAIGamesInc.2685271D3260E_gdy2aq6ez762w",
+      "source": "COM interface methods",
+      "usesWindowsBuildOffsets": false,
+      "lookupOverrides": false
+    },
+    {
+      "kind": "license-manager-created",
+      "pid": 36536,
+      "hresult": "0x00000000",
+      "interfaceId": "90e2000c-b946-42fa-892f-94506f30ca4f"
+    },
+    {
+      "kind": "license-probe-manager-result",
+      "pid": 36536,
+      "hresult": "0x00000000"
+    },
+    {
+      "kind": "license-probe-proxy-configuration",
+      "pid": 36536,
+      "hresult": "0x00000000",
+      "matchesNativeStoreImpersonationSettings": true
+    },
+    {
+      "kind": "license-package-lookup",
+      "pid": 36536,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "method": "IApplicationLicenseManager.GetLicenseForInstalledPackage",
+      "packageFullName": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "contentType": 1,
+      "flags": "0x20000000"
+    },
+    {
+      "kind": "license-package-lookup-result",
+      "pid": 36536,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "packageFullName": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "hresult": "0x803f8001",
+      "objectReturned": false
+    }
+  ]
+}

@@ -18,7 +18,7 @@ This repository preserves experiments, successful controls, rejected approaches,
 
 6. **The correct receipt-request GUID matters, but it does not grant ownership.** PAC-MAN Toshiba's failed package-license lookup produced an invalid GUID; substituting its correct legacy GUID enabled receipt issuance on the friend's reportedly licensed account but did not resolve modern Xbox authentication.
 
-7. **A signed PAC-MAN Toshiba receipt did not guarantee Xbox authentication.** A possible missing or unsupported link between legacy entitlements and modern licensing identities could affect OEM editions such as PAC-MAN VAIO and Toshiba, but this remains a hypothesis; the receipt/CLIP discrepancy was directly observed for Toshiba.
+7. **A signed PAC-MAN Toshiba receipt did not guarantee Xbox authentication.** A possible missing or unsupported link between legacy entitlements and modern licensing identities could affect OEM editions such as PAC-MAN VAIO and Toshiba, but this remains a hypothesis; Toshiba's public catalog does contain a legacy entitlement mapping, so a wholly absent catalog link is not established.
 
 8. **PAC-MAN Toshiba showed that legacy receipt issuance and CLIP satisfaction can disagree.** The legacy service returned a full-license receipt while CLIP reported no satisfying entitlement, so recognition by one path does not establish recognition by the other or the account's entire purchase history.
 
@@ -31,6 +31,10 @@ This repository preserves experiments, successful controls, rejected approaches,
 **For the receipt-backed path studied here, the practical requirement for full Xbox Live functionality is a fresh, authentic `pop.bin` for the specific game, obtained through an account that genuinely owns that game's license. The receipt is presented to Microsoft's servers during authentication; editing, fabricating, or substituting another game's receipt did not produce an accepted substitute in our tests.**
 
 This is a necessary starting point, not a guarantee of full functionality: PAC-MAN Toshiba demonstrates that even receipt issuance can be followed by Xbox rejection. No working receipt forgery or spoof was demonstrated; that is an empirical conclusion, not proof that every conceivable future method is impossible. It also does not assert that the Xbox account consuming a receipt must always be the account that obtained it.
+
+## Logs and protocol examples
+
+[Browse Log Records](Log%20Records/README.md) for sanitized XML receipts, Store request/response events, Xbox SOAP structural traces, decoded CLIP policies, and the retained evidence index. Feed this folder and the [research guide](docs/research-map.md) to your own Codex client to ask detailed questions or plan a new experiment; sensitive values are replaced with same-length zero strings. See the [local-reference audit](docs/reference-audit-2026-11-10.md) for coverage and limitations.
 
 ## Start here: questions and continued research
 
@@ -59,7 +63,7 @@ The original findings remain intact: downloading, staging and registering the en
 
 ## What is included
 
-Only documentation, public package identifiers, and summarized observations. There are no game files, binaries, dependency installers, releases, private keys, certificates, authentication tokens, account records, memory dumps, or raw network/event captures.
+Documentation, public package identifiers, summarized observations, and sanitized diagnostic/protocol examples. There are no game files, binaries, dependency installers, releases, private keys, certificates, authentication tokens, account records, memory dumps, or raw network/event captures.
 
 Public content IDs and encryption-key **identifiers** identify packages or keys; they are not secret decryption keys.
 

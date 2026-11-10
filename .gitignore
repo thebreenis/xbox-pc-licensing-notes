@@ -7,3 +7,11 @@
 *token*
 *secret*
 *private*
+
+# Explicitly reviewed sanitized records only; never raw capture directories.
+!Log Records/
+!Log Records/*.json
+!Log Records/*.jsonl
+!Log Records/*.xml
+
+!.gitattributes

@@ -1,0 +1,28 @@
+[
+  {
+    "legacyProductId": "77f0d9b5-87ac-4816-87d5-76b75afcb6db"
+  },
+  {
+    "entitlementId": "00000000000000000000000000000000",
+    "entitlementSatisfaction": "Device",
+    "isOffline": true,
+    "leaseEnforcement": "RefreshOnStartup",
+    "leaseUri": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "keyIds": [
+      "000000000000000000000000000000000000"
+    ],
+    "kind": "Content",
+    "packages": [
+      {
+        "packageIdentifier": "a813df52-acd9-9362-9d5f-79d4452447a9",
+        "packageType": "appx",
+        "productAddOns": [],
+        "productId": "9WZDNCRFJB4P",
+        "skuId": "0010"
+      }
+    ],
+    "pollAt": "2026-11-23T16:45:48.7016692+00:00",
+    "refreshOnStartup": true,
+    "version": 7
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "edition": "toshiba",
+    "productId": "9WZDNCRDMWQF",
+    "packageFamily": "NAMCOBANDAIGamesInc.2685271D3260E_gdy2aq6ez762w",
+    "alternateIds": [
+      {
+        "IdType": "LegacyWindowsStoreProductId",
+        "Value": "2d4168ad-4092-4ea7-92fd-1c81e8191304"
+      },
+      {
+        "IdType": "LegacyWindowsPhoneProductId",
+        "Value": "af5d47b9-41cd-4071-81d0-67ba43c95f04"
+      },
+      {
+        "IdType": "XboxTitleId",
+        "Value": "2016983674"
+      }
+    ],
+    "derivedContentId": "79027a65-d615-f76d-a36d-e56124399ad5",
+    "skus": [
+      {
+        "sku": "0010",
+        "trial": false,
+        "contentIds": [
+          "79027a65-d615-f76d-a36d-e56124399ad5"
+        ],
+        "satisfyingEntitlementKeys": [
+          "big:9WZDNCRDMWQF:0001",
+          "big:9WZDNCRDMWQF:0002",
+          "big:9WZDNCRDMWQF:0010",
+          "wes:App:2d4168ad-4092-4ea7-92fd-1c81e8191304:Full",
+          "wes:App:af5d47b9-41cd-4071-81d0-67ba43c95f04:Full"
+        ]
+      },
+      {
+        "sku": "0011",
+        "trial": true,
+        "contentIds": [
+          "79027a65-d615-f76d-a36d-e56124399ad5"
+        ],
+        "satisfyingEntitlementKeys": []
+      }
+    ],
+    "catalogSHA256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "source": "https://displaycatalog.mp.microsoft.com/v7.0/products/9WZDNCRDMWQF?market=US&languages=en-us"
+  },
+  {
+    "edition": "standard",
+    "productId": "9WZDNCRDMWQH",
+    "packageFamily": "NAMCOBANDAIGamesInc.PAC-MANChampionshipEditionDX_gdy2aq6ez762w",
+    "alternateIds": [
+      {
+        "IdType": "LegacyWindowsStoreProductId",
+        "Value": "03385fc3-0d41-46b1-a450-ee24675c1031"
+      },
+      {
+        "IdType": "LegacyWindowsPhoneProductId",
+        "Value": "8771b753-bf51-4280-a1a0-e2f891ba9f71"
+      },
+      {
+        "IdType": "XboxTitleId",
+        "Value": "2054421214"
+      }
+    ],
+    "derivedContentId": "26c5c07d-b3f5-2231-e5b9-1b83d574f74e",
+    "skus": [
+      {
+        "sku": "0011",
+        "trial": true,
+        "contentIds": [
+          "26c5c07d-b3f5-2231-e5b9-1b83d574f74e"
+        ],
+        "satisfyingEntitlementKeys": []
+      },
+      {
+        "sku": "0017",
+        "trial": false,
+        "contentIds": [
+          "26c5c07d-b3f5-2231-e5b9-1b83d574f74e"
+        ],
+        "satisfyingEntitlementKeys": []
+      },
+      {
+        "sku": "0010",
+        "trial": false,
+        "contentIds": [
+          "26c5c07d-b3f5-2231-e5b9-1b83d574f74e"
+        ],
+        "satisfyingEntitlementKeys": [
+          "big:9WZDNCRDMWQH:0001",
+          "big:9WZDNCRDMWQH:0002",
+          "big:9WZDNCRDMWQH:0010",
+          "big:9WZDNCRDMWQH:0017",
+          "wes:App:03385fc3-0d41-46b1-a450-ee24675c1031:Full",
+          "wes:App:8771b753-bf51-4280-a1a0-e2f891ba9f71:Full"
+        ]
+      }
+    ],
+    "catalogSHA256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "source": "https://displaycatalog.mp.microsoft.com/v7.0/products/9WZDNCRDMWQH?market=US&languages=en-us"
+  },
+  {
+    "edition": "adera",
+    "productId": "9WZDNCRFJB4P",
+    "packageFamily": "Microsoft.Adera_8wekyb3d8bbwe",
+    "alternateIds": [
+      {
+        "IdType": "LegacyWindowsStoreProductId",
+        "Value": "77f0d9b5-87ac-4816-87d5-76b75afcb6db"
+      },
+      {
+        "IdType": "LegacyWindowsPhoneProductId",
+        "Value": "aab1d0bb-1986-46f3-bb99-808ad345f7d3"
+      },
+      {
+        "IdType": "XboxTitleId",
+        "Value": "2047016295"
+      }
+    ],
+    "derivedContentId": "a813df52-acd9-9362-9d5f-79d4452447a9",
+    "skus": [
+      {
+        "sku": "0010",
+        "trial": false,
+        "contentIds": [
+          "a813df52-acd9-9362-9d5f-79d4452447a9"
+        ],
+        "satisfyingEntitlementKeys": [
+          "big:9WZDNCRFJB4P:0001",
+          "big:9WZDNCRFJB4P:0002",
+          "big:9WZDNCRFJB4P:0010",
+          "wes:App:77f0d9b5-87ac-4816-87d5-76b75afcb6db:Full",
+          "wes:App:aab1d0bb-1986-46f3-bb99-808ad345f7d3:Full"
+        ]
+      },
+      {
+        "sku": "0011",
+        "trial": true,
+        "contentIds": [
+          "a813df52-acd9-9362-9d5f-79d4452447a9"
+        ],
+        "satisfyingEntitlementKeys": []
+      }
+    ],
+    "catalogSHA256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "source": "https://displaycatalog.mp.microsoft.com/v7.0/products/9WZDNCRFJB4P?market=US&languages=en-us"
+  }
+]

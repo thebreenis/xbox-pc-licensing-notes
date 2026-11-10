@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-10",
+  "attemptUtc": "11:19",
+  "interaction": "Computer Use: pressed title-screen continue; observed Xbox connection error; no authentication dialog appeared",
+  "receiptGuidSent": "273de536-b14a-469b-a1cc-4f1179dc18d6",
+  "nativeServiceError": "0xc03f300c",
+  "mappedError": "0x80073df6",
+  "sdkError": "0x82bc000c",
+  "tokenObtained": false,
+  "sameRunClipRecordIdentifierMatchesBrokerPrimaryWebAccountId": [
+    0
+  ],
+  "limitations": [
+    "LicenseManager service crashed before sign-in: STATUS_BAD_FUNCTION_TABLE, ntdll+0x1d3df",
+    "Removing non-returning throw hook did not fix service tracing",
+    "Account identifier present in collection is not proof of final server-side account evaluation",
+    "No raw receipt-service response body captured"
+  ],
+  "helperStopped": true,
+  "preservation": [
+    {
+      "file": "LocalState\\Microsoft.Xbox\\000000000000000000000000000000000000.txt",
+      "state": "matched"
+    },
+    {
+      "file": "LocalState\\Microsoft.Xbox\\ED2EAF28-7260-4872-A8BB-F9EA9189FD79.dat",
+      "state": "missing"
+    },
+    {
+      "file": "Settings\\roaming.lock",
+      "state": "matched"
+    },
+    {
+      "file": "Settings\\settings.dat",
+      "state": "locked"
+    }
+  ],
+  "popPresent": false,
+  "dataRemovedOrRestored": false,
+  "packageOrDistributionChanged": false,
+  "sourceSafetyChange": "Service instrumentation now opt-in experimental; frozen helper not rebuilt yet"
+}

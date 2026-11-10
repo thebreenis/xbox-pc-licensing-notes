@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-10",
+  "arithmetic": {
+    "STORE_ERROR_UNLICENSED_USER": {
+      "decimal": 15862,
+      "hex": "0x3df6",
+      "hresult": "0x80073df6"
+    },
+    "ERROR_INSTALL_REGISTRATION_FAILURE": {
+      "decimal": 15606,
+      "hex": "0x3cf6",
+      "hresult": "0x80073cf6"
+    }
+  },
+  "staticMapping": {
+    "input": "0xc03f300c",
+    "output": "0x80073df6",
+    "x86sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "x64sha256": "3f0fae916cbda1e3c556970d9a9282cd5d43957d3b5b26d691f09565460f8f48",
+    "x86compareRva": "0x179258",
+    "x86mappedRva": "0x17930b",
+    "x64compareRva": "0x140996",
+    "x64mappedRva": "0x140a09",
+    "diagnosticString": "ChkHr(HRESULT_FROM_WIN32(15862L))"
+  },
+  "observedFreshSignIn": false,
+  "newHooksReady": true,
+  "dataBaselineFiles": 6,
+  "baselineDifferences": [],
+  "tests": [
+    "SHA256 observer fixtures",
+    "response error-code allowlist and redaction",
+    "small update verify/apply/repeat",
+    "manifest consistency",
+    "tampered-payload rejection",
+    "zip integrity"
+  ],
+  "accountEquality": "unresolved; supplemental named JSON identifier observations supported but not yet observed"
+}

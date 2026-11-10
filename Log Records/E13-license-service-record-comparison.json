@@ -1,0 +1,246 @@
+{
+  "date": "2026-11-09",
+  "trace": [
+    {
+      "test": "toshiba",
+      "kind": "service-QI",
+      "result": "0x0"
+    },
+    {
+      "test": "toshiba",
+      "kind": "actual-service-interface",
+      "vtable": "LicenseManager.dll+0xbfbf8",
+      "method": "LicenseManager.dll+0x36450"
+    },
+    {
+      "test": "toshiba",
+      "kind": "actual-service-interface",
+      "vtable": "LicenseManager.dll+0xc4580",
+      "method": "LicenseManager.dll+0xa0c90"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-lookup-entry",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "contentType": 1,
+      "flags": 536870912
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-lookup-entry",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "contentType": 1,
+      "flags": 536870912
+    },
+    {
+      "test": "toshiba",
+      "kind": "internal-record-lookup",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "key": "79027A65-D615-F76D-A36D-E56124399AD5",
+      "method": "LicenseManager.dll+0x4980",
+      "flags": 536870912
+    },
+    {
+      "test": "toshiba",
+      "kind": "storage-query-call",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "method": "LicenseManager.dll+0x10a60",
+      "flags": 536870912
+    },
+    {
+      "test": "toshiba",
+      "kind": "local-license-table-search",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "entryCount": 0,
+      "found": false,
+      "keys": []
+    },
+    {
+      "test": "toshiba",
+      "kind": "local-license-table-miss",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-failure-origin",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "status": "0x803f8001",
+      "line": 171,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\managercore.cpp",
+      "caller": "LicenseManager.dll+0x3f703",
+      "stack": [
+        "LicenseManager.dll+0x3f703",
+        "LicenseManager.dll+0x4b4a",
+        "0x7ffa95b70256",
+        "0x40057"
+      ]
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-failure-origin",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "status": "0x803f8001",
+      "line": 125,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\onestoreapplicensemanager.cpp",
+      "caller": "LicenseManager.dll+0x23253",
+      "stack": [
+        "LicenseManager.dll+0x23253",
+        "LicenseManager.dll+0x364b6",
+        "RPCRT4.dll+0xd2d53",
+        "RPCRT4.dll+0xd570e",
+        "RPCRT4.dll+0x4c000",
+        "combase.dll+0x9443d",
+        "combase.dll+0x93ee7",
+        "combase.dll+0x936b8",
+        "combase.dll+0x11ad00",
+        "combase.dll+0x95d42",
+        "combase.dll+0x4126a",
+        "combase.dll+0x1d277"
+      ]
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-lookup-exit",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "status": "0x803f8001",
+      "objectReturned": false
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-lookup-exit",
+      "package": "NAMCOBANDAIGamesInc.2685271D3260E_1.0.1.2_x86__gdy2aq6ez762w",
+      "status": "0x803f8001",
+      "objectReturned": false
+    },
+    {
+      "test": "adera",
+      "kind": "service-QI",
+      "result": "0x0"
+    },
+    {
+      "test": "adera",
+      "kind": "actual-service-interface",
+      "vtable": "LicenseManager.dll+0xbfbf8",
+      "method": "LicenseManager.dll+0x36450"
+    },
+    {
+      "test": "adera",
+      "kind": "actual-service-interface",
+      "vtable": "LicenseManager.dll+0xc4580",
+      "method": "LicenseManager.dll+0xa0c90"
+    },
+    {
+      "test": "adera",
+      "kind": "service-lookup-entry",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "contentType": 1,
+      "flags": 536870912
+    },
+    {
+      "test": "adera",
+      "kind": "service-lookup-entry",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "contentType": 1,
+      "flags": 536870912
+    },
+    {
+      "test": "adera",
+      "kind": "internal-record-lookup",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "key": "A813DF52-ACD9-9362-9D5F-79D4452447A9",
+      "method": "LicenseManager.dll+0x4980",
+      "flags": 536870912
+    },
+    {
+      "test": "adera",
+      "kind": "storage-query-call",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "method": "LicenseManager.dll+0x10a60",
+      "flags": 536870912
+    },
+    {
+      "test": "adera",
+      "kind": "local-license-table-search",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "entryCount": 0,
+      "found": false,
+      "keys": []
+    },
+    {
+      "test": "adera",
+      "kind": "local-license-table-miss",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe"
+    },
+    {
+      "test": "adera",
+      "kind": "license-selection-entry",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "begin": "0x694c47daa0",
+      "end": "0x694c47daa8",
+      "empty": false
+    },
+    {
+      "test": "adera",
+      "kind": "license-selection-exit",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "status": "0x0"
+    },
+    {
+      "test": "adera",
+      "kind": "service-lookup-exit",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "status": "0x0",
+      "objectReturned": true
+    },
+    {
+      "test": "adera",
+      "kind": "service-lookup-exit",
+      "package": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "status": "0x0",
+      "objectReturned": true
+    }
+  ],
+  "registry": {
+    "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Store\\ContentId",
+    "aderaValue": "{a813df52-acd9-9362-9d5f-79d4452447a9}",
+    "toshibaValuePresent": false
+  },
+  "preservation": {
+    "toshiba": {
+      "trackedFiles": 6,
+      "allHashesMatch": true,
+      "restoredStartupChanges": [],
+      "receiptPresent": false
+    },
+    "adera": {
+      "trackedFiles": 315,
+      "allHashesMatch": true,
+      "restoredStartupChanges": [
+        "LocalState\\sentient.dat",
+        "LocalState\\Microsoft.Xbox\\ED2EAF28-7260-4872-A8BB-F9EA9189FD79.dat",
+        "LocalState\\Microsoft.Xbox\\pop.bin",
+        "LocalState\\Microsoft.Xbox\\0000000000000000\\1\\0000000000000000000000000000000000000000000000000000000000000000",
+        "LocalState\\Microsoft.Xbox\\0000000000000000\\3\\0000000000000000000000000000000000000000000000000000000000000000",
+        "LocalState\\Microsoft.Xbox\\0000000000000000\\3\\0000000000000000000000000000000000000000000000000000000000000000",
+        "LocalState\\Microsoft.Xbox\\ReceiptKey\\0000000000000000000000000000000000000000000000000000000000000000",
+        "Settings\\settings.dat",
+        "Settings\\settings.dat.LOG1"
+      ],
+      "receiptPresent": true
+    }
+  },
+  "limitations": [
+    "Registry mapping presence correlates with lookup success; its causal sufficiency is not proven.",
+    "Cache miss leads to asynchronous load; a cache miss alone does not prove missing persistent license.",
+    "Physical license-record database and its failed read have not been isolated."
+  ],
+  "instrumentationIncident": {
+    "service": "LicenseManager",
+    "exception": "0xc00000ff",
+    "during": "broader CLIPC worker-thread instrumentation",
+    "recovered": true,
+    "normalResultsReverified": true,
+    "tracesDetached": true
+  },
+  "licenseManagerDllSha256": "a9119eb185eb378b3579699596ce508cba6ffeda60d191648d2fecfbfef64605"
+}

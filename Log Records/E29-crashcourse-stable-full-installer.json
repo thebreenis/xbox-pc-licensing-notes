@@ -1,0 +1,21 @@
+{
+  "version": "1.1.37.4",
+  "payloadFilesVerified": 2355,
+  "privateDataExcluded": true,
+  "gameFilesMatchInstalled": true,
+  "zipBytes": 167259408,
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "archive": "CrashCourseGo-1.1.37.4-Stable-Logging-Full-Installer.zip",
+  "completeInstaller": true,
+  "stableHelperIncluded": true,
+  "signaturesVerified": true,
+  "helperSelfTestPassed": true,
+  "powershellParsePassed": true,
+  "repeatLauncherZipIsolationAndCleanupPassed": true,
+  "localInstallPerformed": false,
+  "crashLogsDefault": true,
+  "noSuspensionDefault": true,
+  "optionalReceiptPicker": true,
+  "embeddedSdkLoggerBuild": 6,
+  "serviceCoverage": "Stable reduced ticket/account request probe; unsupported hashes skipped"
+}

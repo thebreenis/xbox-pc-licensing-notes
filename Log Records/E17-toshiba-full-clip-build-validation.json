@@ -1,0 +1,29 @@
+{
+  "payloadHashesVerified": 5,
+  "installerFilesVerified": 108,
+  "gameVersion": "1.0.1.2",
+  "noBundledReceiptsSavesTokens": true,
+  "zip": "PAC-MAN-Toshiba-1.0.1.2-Full-CLIP-Diagnostics-Installer.zip",
+  "zipBytes": 588018084,
+  "zipSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "zipCrcVerified": true,
+  "signaturesVerified": true,
+  "sdkUniqueSessionTest": true,
+  "frozenHelperStopAndMarkerCleanupTest": true,
+  "installerMenuTests": true,
+  "appxDifferences": [
+    "pacman-toshiba-xbl-log.dll",
+    "generated block map, signature, integrity catalog and content-type ordering"
+  ],
+  "livePreservation": {
+    "toshiba": {
+      "files": 6,
+      "allMatch": true
+    },
+    "adera": {
+      "files": 383,
+      "allMatch": true
+    }
+  },
+  "licensedToshibaSuccessTested": false
+}

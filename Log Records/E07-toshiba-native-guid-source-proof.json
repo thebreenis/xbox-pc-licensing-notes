@@ -1,0 +1,131 @@
+{
+  "before": {
+    "cacheAfter": "00000000000000000000000000000000",
+    "appIdHresult": 0,
+    "appIdBytes": "00000000000000000000000000000000",
+    "implementation": "0x6535f9f0 PCEDX_Win8.exe!DllCanUnloadNow"
+  },
+  "source": {
+    "cachedServerGuid": "00000000000000000000000000000000",
+    "cachedLicenseGuid": "00000000000000000000000000000000",
+    "licenseInstanceAbsent": true,
+    "contextVtable": "Windows.ApplicationModel.Store.dll+0x180970",
+    "contextFirstMethod": "Windows.ApplicationModel.Store.dll+0xdf360"
+  },
+  "temporaryCorrection": {
+    "sourceGuid": "00000000000000000000000000000000",
+    "serverGuid": "00000000000000000000000000000000"
+  },
+  "after": {
+    "cacheAfter": "00000000000000000000000000000000",
+    "appIdHresult": 0,
+    "appIdBytes": "00000000000000000000000000000000",
+    "implementation": "0x6535f9f0 PCEDX_Win8.exe!DllCanUnloadNow"
+  },
+  "receiptResult": {
+    "status": 3,
+    "error": "0x80073df6"
+  },
+  "events": [
+    {
+      "kind": "winhttp-hook-ready",
+      "pid": 36912,
+      "packageFamily": "NAMCOBANDAIGamesInc.2685271D3260E_gdy2aq6ez762w",
+      "productId": "2d4168ad-4092-4ea7-92fd-1c81e8191304"
+    },
+    {
+      "kind": "broker-observer-ready",
+      "pid": 36912,
+      "packageFamily": "NAMCOBANDAIGamesInc.2685271D3260E_gdy2aq6ez762w",
+      "requestRewriting": false
+    },
+    {
+      "kind": "server-AppId-getter",
+      "cachedGuid": "00000000000000000000000000000000",
+      "sourceContext": "0x17484199d10"
+    },
+    {
+      "kind": "server-AppId-getter",
+      "cachedGuid": "00000000000000000000000000000000",
+      "sourceContext": "0x17484199d10"
+    },
+    {
+      "kind": "native-request-origin",
+      "pid": 36912,
+      "path": "/Licensing/License/AcquireReceipt/6.2/0?productId=2D4168AD-4092-4EA7-92FD-1C81E8191304&receiptType=Full",
+      "stack": [
+        "0x7ffac465a4a9 RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffac4659df6 RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffac465a025 RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffac463316c RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffac4630401 RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffac4632e4c RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffac4606c0c RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffac45122ac RuntimeBroker.exe!DllGetClassObject",
+        "0x7ffb3e32c99b RuntimeBroker.exe!LdrAddRefDll",
+        "0x7ffb3e2d51b0 RuntimeBroker.exe!TpCallbackMayRunLong",
+        "0x7ffb3d63dda7 RuntimeBroker.exe!BaseThreadInitThunk",
+        "0x7ffb3e379c5c RuntimeBroker.exe!RtlUserThreadStart"
+      ]
+    },
+    {
+      "kind": "receipt-header-names",
+      "pid": 36912,
+      "names": [
+        "MS-CorrelationId"
+      ],
+      "valuesLogged": false
+    },
+    {
+      "kind": "receipt-header-names",
+      "pid": 36912,
+      "names": [
+        "MS-RequestId"
+      ],
+      "valuesLogged": false
+    },
+    {
+      "kind": "receipt-header-names",
+      "pid": 36912,
+      "names": [
+        "MS-SiteName"
+      ],
+      "valuesLogged": false
+    },
+    {
+      "kind": "receipt-header-names",
+      "pid": 36912,
+      "names": [
+        "MS-CV"
+      ],
+      "valuesLogged": false
+    },
+    {
+      "kind": "receipt-header-names",
+      "pid": 36912,
+      "names": [
+        "Authorization"
+      ],
+      "valuesLogged": false
+    },
+    {
+      "kind": "receipt-request-shape",
+      "pid": 36912,
+      "optionalBodyBytes": 0,
+      "rawHeadersLogged": false,
+      "rawBodyLogged": false
+    },
+    {
+      "kind": "receipt-http-status",
+      "pid": 36912,
+      "status": 200
+    },
+    {
+      "kind": "receipt-http-status",
+      "pid": 36912,
+      "status": 200
+    }
+  ],
+  "networkRewriteUsed": false,
+  "sourceRestored": true
+}

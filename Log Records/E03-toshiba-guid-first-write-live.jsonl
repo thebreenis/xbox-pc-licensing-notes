@@ -1,0 +1,9 @@
+{"kind": "first-write-hooks-ready", "pid": 36536, "constructorRva": "0xdd5ec", "dllTimestamp": "0x1952801d", "readOnly": true}
+{"kind": "context-allocation-return", "pid": 36536, "object": "0x264dd164e50", "allocationBytes": 480, "guidAtAllocationReturn": "00000000000000000000000000000000"}
+{"kind": "context-constructor-entry", "pid": 36536, "object": "0x264dd164e50", "guidBeforeConstructor": "00000000000000000000000000000000", "allocation": null}
+{"kind": "context-constructor-exit", "pid": 36536, "object": "0x264dd164e50", "guidAfterConstructor": "00000000000000000000000000000000", "constructorGuidWrites": 0}
+{"kind": "license-refresh-entry", "pid": 36536, "object": "0x264dd164e50", "guid": "00000000000000000000000000000000"}
+{"kind": "license-refresh-exit", "pid": 36536, "object": "0x264dd164e50", "hresult": "0x0", "guid": "00000000000000000000000000000000", "licenseObjectPresent": false}
+{"kind": "server-guid-initialization-entry", "pid": 36536, "server": "0x264dd169fb0", "context": "0x264dd164e50", "contextGuid": "00000000000000000000000000000000", "serverGuidBefore": "00000000000000000000000000000000"}
+{"kind": "first-guid-copy-instruction", "pid": 36536, "rva": "0x7954e", "disassembly": "movdqu xmmword ptr [rsi + 0xa0], xmm0", "contextGuid": "00000000000000000000000000000000", "serverGuidBefore": "00000000000000000000000000000000"}
+{"kind": "server-guid-initialization-exit", "pid": 36536, "server": "0x264dd169fb0", "hresult": "0x0", "contextGuid": "00000000000000000000000000000000", "serverGuidAfter": "00000000000000000000000000000000"}

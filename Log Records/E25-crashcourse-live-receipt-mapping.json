@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-10",
+  "receiptGuidSent": "273de536-b14a-469b-a1cc-4f1179dc18d6",
+  "reportedGuid": "000000000000000000000000000000000000",
+  "liveNativeMapping": [
+    {
+      "input": "0xc03f300c",
+      "output": "0x80073df6",
+      "utc": "2026-11-10T07:34:08.048280+00:00"
+    }
+  ],
+  "accountEquality": "unresolved: no comparable CLIP account ID",
+  "wireCoverage": "pre-existing WinHTTP connection was not observed; no response body captured in this run",
+  "externalHelperStopped": true,
+  "baselineMatched": 2,
+  "baselineChanged": [
+    "LocalState/Microsoft.Xbox/ED2EAF28-7260-4872-A8BB-F9EA9189FD79.dat"
+  ],
+  "baselineLocked": [
+    "Settings/settings.dat",
+    "Settings/settings.dat.LOG1",
+    "Settings/settings.dat.LOG2"
+  ],
+  "popPresent": false
+}

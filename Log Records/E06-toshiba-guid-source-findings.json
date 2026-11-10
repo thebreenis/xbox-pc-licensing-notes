@@ -1,0 +1,47 @@
+{
+  "cause": "Native Windows Store licensing context supplies the incorrect GUID before receipt request construction. Toshiba has no cached license-instance object; Adera has one and GetContentInfo/GetWindowsStoreAppId returns its catalog GUID.",
+  "confidence": {
+    "badGuidExistsBeforeRequest": "verified dynamically",
+    "sourceCorrectionChangesNativeRequestWithoutUrlRewrite": "verified dynamically",
+    "uninitializedNoLicenseFallback": "supported by missing AppId initialization in context constructor and absent license-content object; no fresh-process allocation trace yet"
+  },
+  "nativePath": [
+    "Store licensing context AppId",
+    "StoreCommerceServer::InitializeIdsFromLicense copies context GUID",
+    "StoreCommerceServer::GetAppId returns cached GUID",
+    "CurrentAppFactory::get_AppId caches result",
+    "ReceiptHelpers constructs AcquireReceipt URL from server GUID"
+  ],
+  "systemDll": {
+    "path": "C:/Windows/System32/Windows.ApplicationModel.Store.dll",
+    "sha256": "3f0fae916cbda1e3c556970d9a9282cd5d43957d3b5b26d691f09565460f8f48",
+    "constructorRva": "0xdd5xx..0xdd7b1",
+    "licenseGetWindowsStoreAppIdCallRva": "0xdf988..0xdf9a0",
+    "initializeIdsFromLicenseRva": "0x794a0",
+    "serverGetAppIdRva": "0x76f50"
+  },
+  "evidenceFiles": [
+    "work/store-license-appid-source-results.json",
+    "work/toshiba-native-guid-source-proof.json"
+  ],
+  "temporaryFix": "Corrected Toshiba-only broker context and server AppId in memory, then invoked unmodified GetAppReceiptAsync. Native request used correct GUID with no WinHttp URL substitution. Restored both fields afterward.",
+  "result": "Receipt operation still failed 0x80073DF6 on this account. Correct GUID is insufficient to obtain a signed receipt locally.",
+  "persistentChangeInstalled": false,
+  "reason": "Source is the Windows Store broker licensing state, outside the game package. An executable AppId getter patch would not fix the separate broker context. A permanent package-only source repair has not been established.",
+  "safeOptions": [
+    "Restore genuine Store licensing binding for the exact Toshiba package if obtainable.",
+    "Implement an automatic package-scoped broker compatibility correction, which remains broker instrumentation rather than natural Store licensing repair."
+  ],
+  "preservation": {
+    "adera": {
+      "filesVerified": 901,
+      "changed": [],
+      "receiptUnchanged": true
+    },
+    "toshiba": {
+      "filesVerified": 4,
+      "changed": [],
+      "receiptUnchanged": true
+    }
+  }
+}

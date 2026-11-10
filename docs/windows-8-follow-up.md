@@ -1,6 +1,6 @@
 # Windows 8/8.1 licensing follow-up
 
-Observation dates: November 9–10, 2026. Published as a separate comparison to the October F1/MSIXVC investigation.
+Observation dates: November 9â€“10, 2026. Published as a separate comparison to the October F1/MSIXVC investigation.
 
 ## Scope and evidence
 
@@ -74,3 +74,7 @@ The tested Sparkster achievement submissions, including modern-title and additio
 ## Maintainer-reported receipt freshness
 
 The maintainer reports observing 24-hour receipt usability and four-hour Xbox-token lifetime in the tested setup, with stale receipts automatically refreshed when the Store account owns the corresponding AppId and refresh/sign-in refused otherwise. This adds tester-reported timing evidence to the earlier unresolved lifetime discussion; it is not a published universal Microsoft contract or a controlled timing trace included in this repository. It does not resolve cross-account portability or prove that receipt issuance guarantees every downstream service works.
+
+## Catalog mapping qualification (publication audit, November 10)
+
+The retained unauthenticated catalog snapshot identifies Toshiba product `9WZDNCRDMWQF`, content ID `79027a65-d615-f76d-a36d-e56124399ad5`, and full SKU `0010`. Its satisfying entitlement list includes `wes:App:2d4168ad-4092-4ea7-92fd-1c81e8191304:Full`. A legacy mapping therefore exists in the published definition; it remains unresolved why the tested account does not satisfy the corresponding CLIP request. A durable add-on receipt does not alone establish the base-app entitlement or applicability evaluated by CLIP. See [E19](../Log%20Records/E19-toshiba-catalog-mapping.json), the [audit](reference-audit-2026-11-10.md), and [full historical snapshot](local-reference-snapshot.md).

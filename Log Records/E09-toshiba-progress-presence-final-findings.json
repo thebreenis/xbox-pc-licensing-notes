@@ -1,0 +1,61 @@
+{
+  "sparkster": {
+    "synced": false,
+    "variants": [
+      {
+        "name": "percent-complete-post",
+        "http": 405,
+        "response": null
+      },
+      {
+        "name": "progress-update-post",
+        "http": 405,
+        "response": null
+      },
+      {
+        "name": "title-achievements-progress-update-post",
+        "http": 405,
+        "response": null
+      },
+      {
+        "name": "title-achievement-record",
+        "http": 404,
+        "response": null
+      },
+      {
+        "name": "percent-complete-put",
+        "http": 405,
+        "response": null
+      }
+    ]
+  },
+  "presence": {
+    "endpoint": "presence-heartbeat.xboxlive.com",
+    "contractVersion": 3,
+    "titleId": 2016983674,
+    "tokenSource": "Running Xbox PC app; account verified; token retained only in memory",
+    "heartbeatHTTP": 200,
+    "independentReadbacks": [
+      {
+        "source": "UserPresence",
+        "id": "2016983674",
+        "name": "PAC-MAN Championship Edition DX+ for Toshiba",
+        "state": "Active"
+      },
+      {
+        "source": "PeopleHub",
+        "id": "2016983674",
+        "name": "PAC-MAN Championship Edition DX+ for Toshiba",
+        "state": "Active"
+      }
+    ],
+    "cleanupHTTP": 200,
+    "legacyIdHeartbeat": "HTTP 200 but Toshiba was not visible in the readbacks during that test",
+    "simpleAndNewSisuTokens": "HTTP 403 from heartbeat endpoint"
+  },
+  "localData": {
+    "filesVerified": 76,
+    "changed": [],
+    "popBinUnchanged": true
+  }
+}

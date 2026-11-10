@@ -1,0 +1,69 @@
+{
+  "result": {
+    "hresult": "0x00000000",
+    "objectReturned": true,
+    "contentInfoHresult": "0x00000000",
+    "appIdHresult": "0x00000000",
+    "appId": "77f0d9b5-87ac-4816-87d5-76b75afcb6db"
+  },
+  "events": [
+    {
+      "kind": "license-manager-trace-ready",
+      "pid": 3852,
+      "packageFamily": "Microsoft.Adera_8wekyb3d8bbwe",
+      "source": "COM interface methods",
+      "usesWindowsBuildOffsets": false,
+      "lookupOverrides": false
+    },
+    {
+      "kind": "license-manager-created",
+      "pid": 3852,
+      "hresult": "0x00000000",
+      "interfaceId": "90e2000c-b946-42fa-892f-94506f30ca4f"
+    },
+    {
+      "kind": "license-probe-manager-result",
+      "pid": 3852,
+      "hresult": "0x00000000"
+    },
+    {
+      "kind": "license-probe-proxy-configuration",
+      "pid": 3852,
+      "hresult": "0x00000000",
+      "matchesNativeStoreImpersonationSettings": true
+    },
+    {
+      "kind": "license-package-lookup",
+      "pid": 3852,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "method": "IApplicationLicenseManager.GetLicenseForInstalledPackage",
+      "packageFullName": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "contentType": 0,
+      "flags": "0x20000000"
+    },
+    {
+      "kind": "license-package-lookup-result",
+      "pid": 3852,
+      "callId": 1,
+      "origin": "explicit-read-only-probe",
+      "packageFullName": "Microsoft.Adera_2.5.2.34894_x86__8wekyb3d8bbwe",
+      "hresult": "0x00000000",
+      "objectReturned": true
+    },
+    {
+      "kind": "license-content-info-result",
+      "pid": 3852,
+      "hresult": "0x00000000",
+      "interfaceId": "19a543ba-bad2-4739-83c8-177b3beac2ef",
+      "objectReturned": true
+    },
+    {
+      "kind": "license-returned-appid",
+      "pid": 3852,
+      "origin": "explicit-read-only-probe",
+      "hresult": "0x00000000",
+      "appId": "77f0d9b5-87ac-4816-87d5-76b75afcb6db"
+    }
+  ]
+}

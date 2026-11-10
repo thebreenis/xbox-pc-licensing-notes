@@ -1,0 +1,11 @@
+{
+  "verifyOnlyDoesNotMutate": true,
+  "applyAndManifestHashes": true,
+  "idempotentRepeat": true,
+  "launcherUniqueContextAndMarkerCleanupMocked": true,
+  "allMenuActionsAndInvalidInputMocked": true,
+  "tamperedPayloadRejectedWithoutMutation": true,
+  "unsupportedRuntimeRejectedWithoutMutation": true,
+  "javascriptSyntax": true,
+  "zipHashesAndPrivateDataExclusion": true
+}

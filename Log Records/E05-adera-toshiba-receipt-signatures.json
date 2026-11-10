@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Adera",
+    "SignatureValid": true,
+    "CertificateIdMatches": true,
+    "AppId": "Microsoft.Adera_8wekyb3d8bbwe",
+    "ProductReceipts": 0
+  },
+  {
+    "Name": "Toshiba",
+    "SignatureValid": true,
+    "CertificateIdMatches": true,
+    "AppId": "2d4168ad-4092-4ea7-92fd-1c81e8191304",
+    "ProductReceipts": 1
+  }
+]

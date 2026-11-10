@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-09",
+  "records": [
+    {
+      "start": "0x1a03b0",
+      "endExclusive": "0x1a0e1a",
+      "contentId": "a813df52-acd9-9362-9d5f-79d4452447a9",
+      "version": "5",
+      "signatureValidAgainstEmbeddedKey": true,
+      "digestMatches": {
+        "False": true,
+        "True": false
+      },
+      "transforms": [
+        "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+      ],
+      "trustChainValidated": false
+    },
+    {
+      "start": "0x17a4e7",
+      "endExclusive": "0x17b21d",
+      "contentId": null,
+      "version": "5",
+      "signatureValidAgainstEmbeddedKey": true,
+      "digestMatches": {
+        "False": true,
+        "True": false
+      },
+      "transforms": [
+        "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+      ],
+      "trustChainValidated": false
+    }
+  ],
+  "staticFindings": {
+    "LicenseManagerInstallWrapper": "0x61e00 -> tail call ClipInstallLicense at 0x61e21",
+    "CLIPCExports": [
+      "ClipInstallLicense",
+      "ClipRefreshLicense",
+      "ClipGenerateDeviceLicenseRequest"
+    ],
+    "ClipSVCVerificationImports": [
+      "CryptXmlVerifySignature",
+      "BCryptVerifySignature"
+    ]
+  },
+  "limits": [
+    "No whole-file signature or MAC schema established",
+    "Embedded public-key signature verification is not trust-chain validation",
+    "Successful acquisition-to-write transaction not dynamically captured",
+    "Friend licensed account not available locally"
+  ],
+  "preservation": "Only static binaries and tokens.dat read; no games launched, no saves, pop.bin, registry or license-store writes"
+}

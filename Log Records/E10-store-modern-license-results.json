@@ -1,0 +1,14 @@
+{
+  "adera": {
+    "status": 1,
+    "skuStoreId": "9WZDNCRFJB4P/0010",
+    "isActive": true,
+    "isTrial": false
+  },
+  "toshiba": {
+    "status": 1,
+    "skuStoreId": "",
+    "isActive": false,
+    "isTrial": true
+  }
+}

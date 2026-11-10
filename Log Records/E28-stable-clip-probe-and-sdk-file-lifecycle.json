@@ -1,0 +1,230 @@
+{
+  "date": "2026-11-10",
+  "fix": "Replace broad service interception with hash-guarded content-scope entry hook, returned ticket-record observer, and bounded WinHttpSendRequest entry-only JSON inspection. Old unstable source retained for offline diagnosis.",
+  "rootCauseLimitation": "Exact offending original hook/unwind interaction not isolated. Stability established for replacement on this Windows build; not a universal Frida/Windows fix.",
+  "servicePidStayedRunning": 36156,
+  "newApplicationCrashEventsDuringTests": 0,
+  "runs": [
+    {
+      "file": "crashcourse-full-trace-20261110T140616-a689dcdb7070.jsonl",
+      "ticketRecordsObserved": 72,
+      "nativeLookupResults": [
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001",
+        "0x803f8001"
+      ],
+      "requestBodyAccountReferencesMatchingBroker": [],
+      "nativeReceiptMappings": [
+        {
+          "input": "0xc03f300c",
+          "output": "0x80073df6"
+        }
+      ],
+      "sdkFileOperations": [
+        {
+          "api": "CreateFile2",
+          "caller": "Microsoft.Xbox.dll+0x148a29",
+          "bytes": null,
+          "utc": "2026-11-10T14:07:17.910712+00:00"
+        },
+        {
+          "api": "CreateFile2",
+          "caller": "Microsoft.Xbox.dll+0x148a29",
+          "bytes": null,
+          "utc": "2026-11-10T14:07:17.911550+00:00"
+        },
+        {
+          "api": "CloseHandle",
+          "caller": "Microsoft.Xbox.dll+0x147a6f",
+          "bytes": null,
+          "utc": "2026-11-10T14:07:17.915325+00:00"
+        },
+        {
+          "api": "CloseHandle",
+          "caller": "Microsoft.Xbox.dll+0x147a6f",
+          "bytes": null,
+          "utc": "2026-11-10T14:07:17.916860+00:00"
+        },
+        {
+          "api": "DeleteFileW",
+          "caller": "Microsoft.Xbox.dll+0x14886a",
+          "bytes": null,
+          "utc": "2026-11-10T14:07:17.921934+00:00"
+        },
+        {
+          "api": "DeleteFileW",
+          "caller": "Microsoft.Xbox.dll+0x14886a",
+          "bytes": null,
+          "utc": "2026-11-10T14:07:17.922530+00:00"
+        }
+      ],
+      "helperStopped": true,
+      "markersRemaining": false
+    },
+    {
+      "file": "crashcourse-full-trace-20261110T140819-d82956e787bb.jsonl",
+      "ticketRecordsObserved": 2,
+      "nativeLookupResults": [
+        "0x803f8001"
+      ],
+      "requestBodyAccountReferencesMatchingBroker": [
+        "/users/[key]/0/localTicketReference"
+      ],
+      "nativeReceiptMappings": [
+        {
+          "input": "0xc03f300c",
+          "output": "0x80073df6"
+        }
+      ],
+      "sdkFileOperations": [
+        {
+          "api": "CreateFile2",
+          "caller": "Microsoft.Xbox.dll+0x148a29",
+          "bytes": null,
+          "utc": "2026-11-10T14:09:39.951707+00:00"
+        },
+        {
+          "api": "CreateFile2",
+          "caller": "Microsoft.Xbox.dll+0x148a29",
+          "bytes": null,
+          "utc": "2026-11-10T14:09:39.952434+00:00"
+        },
+        {
+          "api": "CloseHandle",
+          "caller": "Microsoft.Xbox.dll+0x147a6f",
+          "bytes": null,
+          "utc": "2026-11-10T14:09:39.953832+00:00"
+        },
+        {
+          "api": "CloseHandle",
+          "caller": "Microsoft.Xbox.dll+0x147a6f",
+          "bytes": null,
+          "utc": "2026-11-10T14:09:39.954408+00:00"
+        },
+        {
+          "api": "DeleteFileW",
+          "caller": "Microsoft.Xbox.dll+0x14886a",
+          "bytes": null,
+          "utc": "2026-11-10T14:09:39.957613+00:00"
+        },
+        {
+          "api": "DeleteFileW",
+          "caller": "Microsoft.Xbox.dll+0x14886a",
+          "bytes": null,
+          "utc": "2026-11-10T14:09:39.958440+00:00"
+        },
+        {
+          "api": "CreateFile2",
+          "caller": "Microsoft.Xbox.dll+0x148aab",
+          "bytes": null,
+          "utc": "2026-11-10T14:10:27.708197+00:00"
+        },
+        {
+          "api": "CreateFile2",
+          "caller": "Microsoft.Xbox.dll+0x148aab",
+          "bytes": null,
+          "utc": "2026-11-10T14:10:27.709159+00:00"
+        },
+        {
+          "api": "WriteFile",
+          "caller": "Microsoft.Xbox.dll+0x148936",
+          "bytes": 20,
+          "utc": "2026-11-10T14:10:27.713172+00:00"
+        },
+        {
+          "api": "WriteFile",
+          "caller": "Microsoft.Xbox.dll+0x148936",
+          "bytes": 20,
+          "utc": "2026-11-10T14:10:27.714105+00:00"
+        },
+        {
+          "api": "CloseHandle",
+          "caller": "Microsoft.Xbox.dll+0x14882b",
+          "bytes": null,
+          "utc": "2026-11-10T14:10:27.716347+00:00"
+        },
+        {
+          "api": "CloseHandle",
+          "caller": "Microsoft.Xbox.dll+0x14882b",
+          "bytes": null,
+          "utc": "2026-11-10T14:10:27.717759+00:00"
+        }
+      ],
+      "helperStopped": true,
+      "markersRemaining": false
+    }
+  ],
+  "accountConclusion": "CLIP serializes an MSA ticket paired with the receipt broker PrimaryWebAccountId as localTicketReference; a second ticket/account reference is also present. Not solely a different selected account. Backend entitlement evaluation and friend account remain unproven.",
+  "fileConclusion": "SDK deletes target .dat on failed receipt/sign-in then recreates and writes 20 bytes on normal game exit; no investigator deletion. Not a proven gameplay save; exact payload semantics unknown.",
+  "preservation": [
+    {
+      "file": "Settings\\roaming.lock",
+      "exists": true,
+      "sameHash": true
+    },
+    {
+      "file": "Settings\\settings.dat",
+      "exists": true,
+      "sameHash": true
+    },
+    {
+      "file": "Settings\\settings.dat.LOG1",
+      "exists": true,
+      "sameHash": true
+    },
+    {
+      "file": "Settings\\settings.dat.LOG2",
+      "exists": true,
+      "sameHash": true
+    },
+    {
+      "file": "LocalState\\Microsoft.Xbox\\000000000000000000000000000000000000.txt",
+      "exists": true,
+      "sameHash": true
+    },
+    {
+      "file": "LocalState\\Microsoft.Xbox\\ED2EAF28-7260-4872-A8BB-F9EA9189FD79.dat",
+      "exists": true,
+      "sameHash": false
+    }
+  ],
+  "popBeforeAndAfter": "absent; never removed or imported",
+  "privateBackup": "C:\\Users\\00000\\Documents\\Codex\\2026-11-04\\https-github-com-freshdex-xct-win8bridge\\work\\crashcourse-preserve-20261110-fixtrace",
+  "packageVersionUnchanged": "1.1.37.4",
+  "installedFilesModified": false,
+  "helperRebuilt": true,
+  "redistArchivesUpdated": false
+}

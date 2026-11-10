@@ -1,0 +1,344 @@
+{
+  "date": "2026-11-09",
+  "scope": "Local account: Toshiba not owned; Adera positive control",
+  "algorithm": "lowercase packageName:publisherSuffix:win8xappx, UTF-16LE without NUL, SHA256, first 16 bytes interpreted as Windows GUID",
+  "independentChecks": [
+    {
+      "input": "NAMCOBANDAIGamesInc.2685271D3260E:gdy2aq6ez762w:win8xappx",
+      "derivedGuid": "79027a65-d615-f76d-a36d-e56124399ad5",
+      "matchesTrace": true
+    },
+    {
+      "input": "Microsoft.Adera:8wekyb3d8bbwe:win8xappx",
+      "derivedGuid": "a813df52-acd9-9362-9d5f-79d4452447a9",
+      "matchesTrace": true
+    }
+  ],
+  "events": [
+    {
+      "test": "toshiba",
+      "kind": "content-key-hash",
+      "input": "NAMCOBANDAIGamesInc.2685271D3260E:gdy2aq6ez762w:win8xappx",
+      "status": "0x0",
+      "guidBytes": "00000000000000000000000000000000"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "79027A65-D615-F76D-A36D-E56124399AD5"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\telemetry.cpp",
+      "line": 246,
+      "format": "License Response: %Iu leases, %Iu keys for contentId %s (Corr: %hs, Svr: %s)",
+      "detail": {
+        "leases": 0,
+        "keys": 0,
+        "contentId": "79027A65-D615-F76D-A36D-E56124399AD5"
+      },
+      "caller": "LicenseManager.dll+0x189bf"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\telemetry.cpp",
+      "line": 186,
+      "format": "Satisfaction error from service: %d: %s (Corr: %hs, Svr: %s), token broker error: 0x%08x, number of MSA tickets: %d, number of AAD tickets: %d, ContentId: %s, PackageFamilyName: %s, ValidExistingKey: %s, HResult: 0x%08x",
+      "detail": {
+        "serviceCode": 1,
+        "serviceMessage": "Users do not possess any satisfying entitlements for the content id in question.",
+        "tokenBrokerStatus": "0x0",
+        "msaTickets": 2,
+        "aadTickets": 0,
+        "contentId": "79027A65-D615-F76D-A36D-E56124399AD5",
+        "packageFamily": null,
+        "validExistingKey": "False",
+        "hresult": "0x803f8001"
+      },
+      "caller": "LicenseManager.dll+0x9bb0a"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "79027a65-d615-f76d-a36d-e56124399ad5"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "toshiba",
+      "kind": "service-debug-template",
+      "thread": 27660,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipstorage.cpp",
+      "line": 269,
+      "format": "No key document found for contentid %s",
+      "detail": {
+        "contentId": "000000000000000000000000000000000000"
+      },
+      "caller": "LicenseManager.dll+0xf99e"
+    },
+    {
+      "test": "adera",
+      "kind": "content-key-hash",
+      "input": "Microsoft.Adera:8wekyb3d8bbwe:win8xappx",
+      "status": "0x0",
+      "guidBytes": "00000000000000000000000000000000"
+    },
+    {
+      "test": "adera",
+      "kind": "service-debug-template",
+      "thread": 9040,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipdocument.cpp",
+      "line": 50,
+      "format": "Decoding: %s",
+      "detail": {},
+      "caller": "LicenseManager.dll+0x88c5"
+    },
+    {
+      "test": "adera",
+      "kind": "service-debug-template",
+      "thread": 9040,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipdocument.cpp",
+      "line": 50,
+      "format": "Decoding: %s",
+      "detail": {},
+      "caller": "LicenseManager.dll+0x88c5"
+    },
+    {
+      "test": "adera",
+      "kind": "service-debug-template",
+      "thread": 9040,
+      "file": "onecoreuap\\enduser\\winstore\\licensemanager\\lib\\clipdocument.cpp",
+      "line": 50,
+      "format": "Decoding: %s",
+      "detail": {},
+      "caller": "LicenseManager.dll+0x88c5"
+    }
+  ],
+  "results": {
+    "toshiba": {
+      "hresult": "0x803f8001",
+      "objectReturned": false,
+      "appId": null,
+      "origin": "explicit-read-only-probe"
+    },
+    "adera": {
+      "hresult": "0x00000000",
+      "objectReturned": true,
+      "contentInfoHresult": "0x00000000",
+      "appIdHresult": "0x00000000",
+      "appId": "77f0d9b5-87ac-4816-87d5-76b75afcb6db"
+    }
+  },
+  "preservation": {
+    "toshiba": {
+      "files": 6,
+      "allMatch": true
+    },
+    "adera": {
+      "files": 382,
+      "allMatch": true
+    }
+  },
+  "limits": [
+    "No physical tokens.dat record offset or complete storage schema established",
+    "Adera decoded existing documents; this turn did not force a disk-cache flush",
+    "Friend account not tested",
+    "Null packageFamily capture does not establish an omitted wire field"
+  ]
+}
