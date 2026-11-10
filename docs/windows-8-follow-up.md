@@ -1,6 +1,6 @@
 # Windows 8/8.1 licensing follow-up
 
-Observation dates: November 9–10, 2026. Published as a separate comparison to the October F1/MSIXVC investigation.
+Observation dates: November 9â€“10, 2026. Published as a separate comparison to the October F1/MSIXVC investigation.
 
 ## Scope and evidence
 

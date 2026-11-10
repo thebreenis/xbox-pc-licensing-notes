@@ -21,6 +21,10 @@ Some statements describe proposed or unresolved paths. In particular, a route de
 
 The tests did not obtain a native request/response trace, recover an F1 key, decrypt its executable, or produce a playable modified build. There is no demonstrated license bypass in these notes. The unlicensed F1 result is not a defect that this documentation claims to have repaired.
 
+## Separate October authentication and achievement cases
+
+For the separate October Rayman/Adera comparison and Minecraft's event-based achievement observations, see [October authentication and achievement case studies](october-auth-and-achievements.md). In particular, identical platform fields did not imply identical authorization outcomes, and local event acceptance did not establish immediate upload. These are title-specific experiments, not additional F1 results.
+
 ## Later Windows 8 account-context finding
 
 A separate native Crash Course Go trace found multiple user tickets inside the outgoing CLIP request body. One transmitted `localTicketReference` matched the receipt broker's selected Store account identifier. Comparing only outer Authorization headers would miss this relationship; different opaque ticket hashes do not establish different Microsoft accounts.

@@ -26,8 +26,12 @@ The Markdown files use public product/package IDs only. The encryption-key ID sh
 
 The repository intentionally contains only Markdown documentation and an allowlist-style `.gitignore`. Raw local evidence remains outside it. Future changes should preserve that boundary and avoid promoting an untested idea into a claimed working result.
 
+## Separate October case-study boundary
+
+The [October authentication and achievement case studies](october-auth-and-achievements.md), added November 10, summarize separate title-specific tests. Minecraft's eventual profile unlocks are tester-confirmed; its local tracing did not individually capture the subsequent collection, upload, and backend stages. Rayman's failed requests are not generalized to every authentication configuration. F1's trial-acquisition API records establish `NotPurchased`; the UI error does not independently establish the backend cause. None of these additions changes the original F1 negative-control conclusion.
+
 ## November Windows 8 follow-up boundary
 
-The [Windows 8/8.1 follow-up](windows-8-follow-up.md) summarizes a separate investigation dated November 9–10, 2026. Its observations must not be attributed retrospectively to the October F1/MSIXVC tests. Local Crash Course account correlation, tester-reported Toshiba ownership, and Adera record inspection are distinct evidence contexts. Detailed captures remain private; this repository publishes no raw receipts, account fingerprints, ticket values, license records, or device identifiers.
+The [Windows 8/8.1 follow-up](windows-8-follow-up.md) summarizes a separate investigation dated November 9â€“10, 2026. Its observations must not be attributed retrospectively to the October F1/MSIXVC tests. Local Crash Course account correlation, tester-reported Toshiba ownership, and Adera record inspection are distinct evidence contexts. Detailed captures remain private; this repository publishes no raw receipts, account fingerprints, ticket values, license records, or device identifiers.
 
 A missing SDK file is not automatically evidence of lost gameplay progress. In the separate Crash Course test, the Xbox SDK deleted a `.dat` state file after failed receipt/sign-in and recreated a 20-byte file on normal exit. Its payload semantics remain unknown. Preserve such files and observe their lifecycle rather than deleting them or classifying all `.dat` files as disposable caches.

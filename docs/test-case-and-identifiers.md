@@ -43,3 +43,18 @@ Public satisfying-entitlement entries referenced current product SKUs, the two l
 Windows Update queries for the known category returned no package links. Exploratory queries using the legacy Store GUID and the bundle GUID also returned none; those exploratory IDs were not established Windows Update categories.
 
 No older downloadable APPX or alternate Windows content ID was found. This is a search result, not proof that no older build ever existed. Microsoft's [October 2019 PC Game Pass announcement](https://news.xbox.com/en-us/2019/10/09/xbox-game-pass-for-pc-october-2019/) confirms the historical PC offering, but does not establish its original package format.
+
+## Trial catalog lookup versus acquisition
+
+Later tests in the October investigation queried the Store API and attempted acquisition. The query succeeded and exposed full SKU `0010`, trial SKU `0011` with its trial flag set, and two trial availability records. Displayed prices were zero; neither a zero price nor a returned availability established that acquisition was possible.
+
+Two acquisition attempts were recorded:
+
+| Target | Purchase status | Extended HRESULT |
+| --- | --- | --- |
+| Trial SKU `9NTZV7H85TW9/0011` | `2` (`NotPurchased`) | `0x00000000` |
+| Exact trial availability `9NTZV7H85TW9/0011/9NQ4FD4ZNL2M` | `2` (`NotPurchased`) | `0x00000000` |
+
+The tester saw `PEX-CatalogAvailabilityDataNotFound` in the Store UI. No trial license was acquired and no trial gameplay was established. The retained API output records the purchase status and HRESULT, not a captured backend response establishing the precise cause of the UI failure.
+
+Microsoft defines [StorePurchaseStatus.NotPurchased](https://learn.microsoft.com/en-us/uwp/api/windows.services.store.storepurchasestatus) as an unsuccessful purchase request. Read that status independently from the extended HRESULT: zero in this field did not mean the trial had been acquired. Catalog discoverability, offer availability, acquisition, and content-key issuance are separate observations. These results do not establish permanent or worldwide trial unavailability.
