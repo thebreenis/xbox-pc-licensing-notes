@@ -40,3 +40,18 @@ Xbox presence was observed even though the main game process was not found. Pres
 Because no main game process was identified, the proposed memory-inspection route had no running F1 executable to inspect. No game memory dump was captured.
 
 See [Microsoft's error-code reference](https://learn.microsoft.com/en-us/xbox/gdk/docs/reference/system/xstore/functions/xstoreacquirelicenseforpackageresult).
+
+## Later tracing caution and error-code distinctions
+
+In a separate Windows 8 investigation, service instrumentation itself caused a LicenseManager process failure with `0xC00000FF` (`STATUS_BAD_FUNCTION_TABLE`) and an RPC failure visible to the caller. A reduced probe survived two fresh launch/sign-in tests; the exact offending original hook or unwind interaction was not isolated. This does not explain or invalidate the original F1 trace. It illustrates why a failure under instrumentation needs a tracing-stability control.
+
+Keep these separate:
+
+| Code | Meaning or observed boundary |
+| --- | --- |
+| `0x80073CF6` | Package registration failure, as recorded in the F1 deployment experiment |
+| `0x80073DF6` | `STORE_ERROR_UNLICENSED_USER`; observed during legacy receipt acquisition |
+| `0xC03F300C` | Observed legacy receipt-service status mapped by the examined Store binaries to `0x80073DF6` |
+| `0x803F8001` | License-acquisition/lookup failure; retain the API and request context rather than equating it with the receipt or registration errors |
+
+The F1 registration code above was already correct. The additional receipt mapping comes from the [Windows 8 follow-up](windows-8-follow-up.md), not from the F1 experiments.

@@ -35,3 +35,9 @@ The controls do not establish that every title, license type, device identity, o
 No F1 content key was obtained, fabricated, or decrypted. No license blob, Microsoft service response, or Gaming Services executable was modified. Successful Xbox sign-in, package registration, or an in-game presence update was not treated as proof of a valid game license.
 
 The study did not produce a working F1 license bypass. Earlier discussion of a hypothetical redeemed Windows copy was exploratory; it was not evidence that this account had purchased or redeemed the tested product.
+
+## Later comparison: scope of an entitlement refusal
+
+The F1 result above remains an unlicensed negative control. In general, a refusal establishes that the service did not find an entitlement satisfying that request's content and authorization context; it does not independently establish the account's entire purchase history or ownership of every related product.
+
+Separate November 2026 Windows 8 tests observed legacy receipt issuance and CLIP entitlement refusal for the same Toshiba title on a tester-reported owning account. These were different service paths, not contradictory results from one API. See the [Windows 8 follow-up](windows-8-follow-up.md) for the evidence limits and distinctions between receipt XML, signed CLIP records, and CIK files. No F1 key or new F1 result was obtained in that follow-up.

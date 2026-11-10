@@ -20,3 +20,9 @@ Some statements describe proposed or unresolved paths. In particular, a route de
 ## Unresolved
 
 The tests did not obtain a native request/response trace, recover an F1 key, decrypt its executable, or produce a playable modified build. There is no demonstrated license bypass in these notes. The unlicensed F1 result is not a defect that this documentation claims to have repaired.
+
+## Later Windows 8 account-context finding
+
+A separate native Crash Course Go trace found multiple user tickets inside the outgoing CLIP request body. One transmitted `localTicketReference` matched the receipt broker's selected Store account identifier. Comparing only outer Authorization headers would miss this relationship; different opaque ticket hashes do not establish different Microsoft accounts.
+
+This narrows one account-mismatch hypothesis for that local Windows 8 run. It neither establishes how F1's native client serialized its request nor proves backend entitlement acceptance. See the [dated follow-up](windows-8-follow-up.md).

@@ -4,7 +4,9 @@ Documentation of Xbox PC / Microsoft Store package installation, MSIXVC metadata
 
 **F1 2018 PC GP was the test case, tested without a valid license.** It was an unlicensed negative control, not evidence that a purchased Windows entitlement was broken. Minecraft for Windows and Minecraft Dungeons supplied successful purchased and subscription controls, respectively.
 
-The tests documented here were performed on Windows on October 24–25, 2026. Results are observations from that environment, not universal guarantees about Microsoft's services.
+The original F1 and licensed-control tests were performed on Windows on October 24-25, 2026. Results are observations from that environment, not universal guarantees about Microsoft's services.
+
+A separate [Windows 8/8.1 follow-up](docs/windows-8-follow-up.md) summarizes November 9�10, 2026 observations from legacy games. Those observations do not revise or reproduce the F1/MSIXVC experiments.
 
 ## Main findings
 
@@ -24,6 +26,7 @@ The tests documented here were performed on Windows on October 24–25, 2026. Re
 5. [External research review and open questions](docs/research-review.md)
 6. [Tools, versions, and references](docs/tools-and-references.md)
 7. [Evidence scope and publication rules](docs/evidence-and-scope.md)
+8. [Windows 8/8.1 follow-up: receipts, CLIP accounts, and tracing](docs/windows-8-follow-up.md)
 
 ## What is included
 
