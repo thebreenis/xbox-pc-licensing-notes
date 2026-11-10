@@ -2,32 +2,44 @@
 
 **PRIMARY SCOPE: Windows 8 and Windows 8.1 games - Xbox Live sign-in, working Presence, and server-synced achievements.**
 
-A group of collectors got together to compare theories and notes about how to play classic Windows 8-era games, ideally with full Xbox Live support. We came to the conclusion that there are 13 game that have been revoked from everyone's accounts. Those games are:
+A group of collectors got together to compare theories and notes about how to play classic Windows 8-era games, ideally with full Xbox Live support. We came to the conclusion that there are 18 game that have been revoked from everyone's accounts. Those games are:
 
-Crash Course Go!
+Six-Guns
+
+Pinball FX2
+
+Team Crossword
+
+WSOP: Full House Pro 
+
+Crash Course Go! 
+
+Disney Little Mermaid 
 
 FIFA 14
 
 Galactic Reign
 
 Glacier Blast
+
 Gunpowder
 
 Monsters Love Candy
 
-PAC-MAN Championship Edition DX+ for 
+PAC-MAN Championship Edition DX+ for Toshiba
 
 PAC-MAN Championship Edition DX+ for VAIO
 
-Royal Envoy II Special Edition
+Royal Envoy II Special Edition 
 
 Secrets and Treasure
 
-The Gunstringer
+The Gunstringer 
 
-Zombies!!!
+Zombies!!! 
 
-Zoo Tycoon Friends
+Zoo Tycoon Friends 
+
 
 This repository preserves experiments, successful controls, rejected approaches, and unresolved questions so researchers and coding agents can build on existing work. These legacy games were often tested on newer Windows installations; this is not a claim about every Windows 8 operating-system build or Xbox SDK.
 
