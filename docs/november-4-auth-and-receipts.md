@@ -8,7 +8,7 @@ These legacy Windows game tests extend the [October case studies](october-auth-a
 
 **Observed** means a retained trace, file comparison, cryptographic check, or recorded Windows crash event. **Tester-reported** means visible behavior described during the experiment. Conclusions below apply to the examined builds and configurations; unresolved causes are identified explicitly.
 
-The source records comprise the November 4 handoff, Crash Course sign-in and receipt-test summaries, a four-game receipt comparison, and Rayman build verification. Only summarized findings are published: no raw receipts, tokens, account/device identifiers, personal paths, captures, binaries, or saves.
+The source records comprise the November 4 handoff, Crash Course sign-in and receipt-test summaries, a four-game receipt comparison, Rayman build verification and later repair/authentication summaries, and Taptiles achievement-submission results. Only summarized findings are published: no raw receipts, tokens, account/device identifiers, personal paths, captures, binaries, or saves.
 
 ## Crash Course Go sign-in did not establish full service functionality
 
@@ -68,6 +68,51 @@ Rayman Fiesta Run local build `1.1.0.16` retained the original Xbox DLL, added t
 
 **Tester-reported:** entering level select crashed the game. **Observed:** a Windows Application event recorded an access violation, `0xC0000005`, in `RFR_WinRT.exe` at RVA `0xADB23`. No retained crash dump was available at the subsequent check. A recursive search found no `pop.bin` in the package's installation or app-data folders.
 
-The absence of a cached receipt was consistent with the tested legacy auth configuration, but did not establish the access violation's cause. Neither the local patches nor missing receipt was isolated as the culprit. Fresh sign-in, presence, and achievement success were not verified for this build. The crash remained unresolved in the November 4 record; this is not a claim about later repairs.
+The absence of a cached receipt was consistent with the tested legacy auth configuration, but did not establish the access violation's cause. Neither the local patches nor missing receipt was isolated as the culprit. Fresh sign-in, presence, and achievement success were not verified for this build. The initial record stopped with this crash unresolved; the later repair below supersedes that status for build `1.1.0.17`.
 
 **Diagnostic lesson:** package integrity, save preservation, successful startup, level-select stability, authentication, and server-accepted achievements require separate validation.
+
+## Rayman level-select repair and its limits
+
+**Observed:** Build `1.1.0.17` corrected twelve URI-escaped resource filenames to their decoded names, including spaces, before repacking. The executable and original Xbox SDK were unchanged from the preceding patched build. Installed-file verification covered the manifest, configuration, executable, SDK and all twelve corrected assets; the 60 checked save-data files had no differences. The settings remained `newAuth=false`, `useSamlToken=true`.
+
+**Tester-reported:** level select opened and a level started successfully. This establishes a working repair in that test, not comprehensive gameplay stability or successful Xbox service authorization. Service sign-in was not tested as part of that verification. The repair did not require removing the existing local license/trial changes.
+
+## Rayman's own signed receipt still failed authentication
+
+A later supplied Rayman `pop.bin` was 1,561 bytes and contained a Full AppReceipt whose AppId matched the Rayman package family, plus one ProductReceipt. Its XML signature verified against the public certificate retrieved from Microsoft's Store licensing certificate endpoint; an independent canonicalization/SHA256 check also matched the reference digest. These checks establish signed-content integrity against that certificate, not independent chain validation, account entitlement or Xbox acceptance. See Microsoft's [receipt-verification procedure](https://learn.microsoft.com/en-us/windows/uwp/monetize/use-receipts-to-verify-product-purchases).
+
+**Observed:** With the original x86 SDK `2.0.131.0`, both `newAuth=true, useSamlToken=false` and `newAuth=true, useSamlToken=true` read the receipt and failed authentication. Tracing confirmed the matching receipt AppId and Rayman title ID at the authentication payload input. XSTS returned HTTP 200 with a 459-byte SOAP `s:Sender` fault and the generic reason that its creator did not specify a reason. No accepted token was established in those attempts.
+
+In the ordinary `false/true` path, the receipt was not read; SAML authentication and profile/achievement-list reads succeeded, while presence and title history failed as described below. Separate temporary experiments forced receipt reading and inclusion while retaining `newAuth=false`, using either token selection. They read/included the receipt but again received the SOAP fault. Downstream presence/history requests were not reached in those experiments; this was not a demonstrated repair of their HTTP 400 failures.
+
+These are build-specific observations, not universal SDK flag semantics. The receipt's additional ProductReceipt is a difference from TY's sample, not an established cause of rejection.
+
+## TY comparison and unsuccessful SDK substitution
+
+TY's working x86 SDK was `1.2.5.0`, compared with Rayman's `2.0.131.0`. The comparison confirmed each game's own title and receipt inputs. The summarized outer SOAP structure and requested JWT token type matched, but the encrypted payloads were not decrypted or shown to be equivalent. TY signed in and returned a successful profile read; Rayman returned the SOAP fault.
+
+A separate Rayman build `1.1.0.23` substituted TY's SDK DLL and matching metadata while preserving Rayman's executable, package/title identity, receipt and saves. With `newAuth=true, useSamlToken=false`, it read the correct Rayman receipt and produced the same `s:Sender` fault. The original SDK was restored afterward.
+
+The working TY SDK did not fix Rayman by itself. This narrows a simple SDK-version explanation; it does not establish the precise backend rejection cause or general cross-title SDK compatibility.
+
+## Rayman presence/history failures were not fixed by timestamp formatting
+
+The ordinary `newAuth=false, useSamlToken=true` run captured these complete small error responses:
+
+| Request | Result |
+| --- | --- |
+| Presence recent PUT, numeric Rayman titleId, contract version 1 | HTTP 400, `ArgumentError` |
+| Title-history POST, titleId plus lastPlayed, contract version 1 | HTTP 400, Progress code 6, invalid request body |
+
+**Observed:** Changing the outgoing history timestamp to include an explicit UTC `Z` still returned HTTP 400/code 6. A retained successful Adera control used the same body structures and contract version, including a timestamp without `Z`: presence returned HTTP 202 and history HTTP 201. The reference capture was inspected without replaying its credentials.
+
+The error wording therefore does not establish that these schemas or the absent `Z` caused the failure. Title-specific validation and authorization context remained unresolved. The temporary timestamp experiment was removed; no service repair was established.
+
+## Taptiles sign-in and local achievement state did not establish write acceptance
+
+Taptiles build `2.6.288.6` used `newAuth=false, useSamlToken=true`; the tester confirmed sign-in. A screenshot and local SDK achievement read agreed that Milestone (ID 3) and Back-to-Back (ID 4) were locally earned. Their explicitly requested resubmission reached the Xbox Progress service.
+
+**Observed:** Both requests returned service code 11, describing an invalid platform type, and asynchronous completion error `0x800C000C`. Initial API invocation had returned success, which did not establish successful asynchronous completion. Response bodies were captured, but numeric HTTP status was not captured for these submissions and must not be inferred from another game's trace.
+
+No successful Xbox-profile update was confirmed. This is a separate title's example of sign-in/local earned state coexisting with rejected achievement writes; it does not isolate the literal platform field as the root cause.

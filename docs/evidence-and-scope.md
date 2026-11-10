@@ -32,7 +32,9 @@ The [October authentication and achievement case studies](october-auth-and-achie
 
 ## November Windows 8 follow-up boundary
 
-The separate [November 4 case studies](november-4-auth-and-receipts.md) distinguish traced Crash Course endpoint results and receipt rejection, offline receipt-signature checks, tester-reported TY login restoration, and Rayman's recorded level-select crash. Receipt dependence in TY does not establish universal portability, and an HTTP 200 response does not by itself establish successful authentication. The unresolved Rayman crash is not attributed to a missing receipt or a particular patch.
+The separate [November 4 case studies](november-4-auth-and-receipts.md) distinguish traced Crash Course endpoint results and receipt rejection, offline receipt-signature checks, tester-reported TY login restoration, and Rayman's recorded level-select crash. Receipt dependence in TY does not establish universal portability, and an HTTP 200 response does not by itself establish successful authentication.
+
+The initial Rayman crash account is followed by the verified asset-filename repair and tester-confirmed gameplay in build `1.1.0.17`; that repair does not establish service authorization. Later Rayman tests verified receipt signature integrity but still observed authentication faults, including after a TY SDK substitution. A timestamp change did not resolve the history failure. Taptiles sign-in and locally earned achievements likewise did not establish accepted writes; its captured service errors did not include numeric HTTP status.
 
 The [Windows 8/8.1 follow-up](windows-8-follow-up.md) summarizes a separate investigation dated November 9–10, 2026. Its observations must not be attributed retrospectively to the October F1/MSIXVC tests. Local Crash Course account correlation, tester-reported Toshiba ownership, and Adera record inspection are distinct evidence contexts. Detailed captures remain private; this repository publishes no raw receipts, account fingerprints, ticket values, license records, or device identifiers.
 

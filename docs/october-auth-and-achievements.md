@@ -56,7 +56,7 @@ In the examined games, `pop.bin` held signed Store receipt XML, separate from th
 
 These tests did not demonstrate an accepted manufactured receipt or interchangeable cross-title receipts. Signature verification against a particular public key, service acceptance, and independent trust-chain validation are distinct checks.
 
-The separate [November 4 case studies](november-4-auth-and-receipts.md) add a four-game signature comparison, TY's cached-receipt removal/restoration control, and a rejected TY-to-Crash-Course receipt substitution. They also document successful legacy Crash Course sign-in with mixed service results and a later Rayman gameplay crash; these outcomes must not be attributed to the October configurations above.
+The separate [November 4 case studies](november-4-auth-and-receipts.md) add a four-game signature comparison, TY's cached-receipt removal/restoration control, and a rejected TY-to-Crash-Course receipt substitution. They also document successful legacy Crash Course sign-in with mixed service results, Rayman's later gameplay crash and verified asset repair, rejected Rayman receipt-backed authentication and SDK substitution, and Taptiles achievement-write rejection. These outcomes must not be attributed to the October configurations above.
 
 ## Minecraft Mobile: separate list and event identities
 
