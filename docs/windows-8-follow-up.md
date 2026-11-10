@@ -64,3 +64,13 @@ This explains temporary absence in that test. The precise payload semantics rema
 - What is the complete schema and integrity model of the persistent CLIP store?
 
 None of these unknowns changes the original F1 conclusion: the unlicensed negative control received no content key, while the two licensed Xodus controls succeeded.
+
+## PAC-MAN Toshiba Presence and achievement boundary
+
+In separate retained Toshiba tests, an Xbox PC app XBL3.0 credential produced an accepted Presence heartbeat for the tested modern title identity, with independent UserPresence/PeopleHub readbacks showing the title active. Other tested credential sources did not produce the same result; an HTTP 200 heartbeat with the legacy identity alone did not establish that title in the readbacks.
+
+The tested Sparkster achievement submissions, including modern-title and additional legacy Progress variants, did not establish synchronization to Toshiba's legacy achievement list. Some variants returned HTTP 404/405; those failures do not by themselves isolate an entitlement problem. Presence success therefore supplied no proof of achievement-write authority or automatic modern-to-legacy achievement translation. These are bounded negative tests, not proof that every future contract or supported credential context must fail.
+
+## Maintainer-reported receipt freshness
+
+The maintainer reports observing 24-hour receipt usability and four-hour Xbox-token lifetime in the tested setup, with stale receipts automatically refreshed when the Store account owns the corresponding AppId and refresh/sign-in refused otherwise. This adds tester-reported timing evidence to the earlier unresolved lifetime discussion; it is not a published universal Microsoft contract or a controlled timing trace included in this repository. It does not resolve cross-account portability or prove that receipt issuance guarantees every downstream service works.
